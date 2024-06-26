@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 5%; /* Changed to a much darker background */
+    --foreground: 0 0% 95%; /* Changed to a lighter foreground for contrast */
+
+    --card: 0 0% 10%; /* Dark card background */
+    --card-foreground: 0 0% 95%; /* Light text on dark card */
+
+    --popover: 0 0% 10%; /* Dark popover background */
+    --popover-foreground: 0 0% 95%; /* Light text on dark popover */
+
+    --primary: 0 0% 95%; /* Light text on primary elements */
+    --primary-foreground: 0 0% 5%; /* Dark background for primary elements */
+
+    --secondary: 0 0% 15%; /* Slightly lighter dark secondary elements */
+    --secondary-foreground: 0 0% 95%; /* Light text on dark secondary elements */
+
+    --muted: 0 0% 15%; /* Muted dark elements */
+    --muted-foreground: 0 0% 75%; /* Muted foreground elements */
+
+    --accent: 0 0% 15%; /* Dark accent elements */
+    --accent-foreground: 0 0% 95%; /* Light text on dark accent elements */
+
+    --destructive: 0 62.8% 25%; /* Darker red destructive elements */
+    --destructive-foreground: 0 0% 95%; /* Light text on destructive elements */
+
+    --border: 0 0% 15%; /* Darker borders */
+    --input: 0 0% 15%; /* Dark inputs */
+    --ring: 0 0% 45%; /* Dark ring around elements */
+}
+
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
